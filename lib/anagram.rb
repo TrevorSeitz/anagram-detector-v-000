@@ -3,5 +3,5 @@ class Anagram
   def initialize(word)
     @word = word
   end
-  # word.downcase.chars.sort.join
+  alpha_word = word.downcase.chars.sort.join
 end
