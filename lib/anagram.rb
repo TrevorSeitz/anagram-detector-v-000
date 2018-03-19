@@ -7,8 +7,16 @@ class Anagram
   # alpha_word = word.downcase.chars.sort.join
 
   def match(word_array)
+    anagram_array = []
     alpha_word = @word.downcase.chars.sort.join
-    binding.pry
+    word_array.each do |input_word|
+      alpha_input = input_word.downcase.chars.sort.join
+      if alpha_input == alpha_word
+        anagram_array << input_word
+      end
+    end
+    # binding.pry
+    anagram_array
   end
 
 end
