@@ -3,8 +3,11 @@ class Anagram
   attr_accessor :word
   def initialize(word)
     @word = word
-    binding.pry
   end
   # alpha_word = word.downcase.chars.sort.join
-  # binding.pry
+
+  def match(word_array)
+    alpha_word = @word.downcase.chars.sort.join
+  end
+  
 end
