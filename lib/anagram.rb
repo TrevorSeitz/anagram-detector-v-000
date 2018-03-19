@@ -8,6 +8,7 @@ class Anagram
 
   def match(word_array)
     alpha_word = @word.downcase.chars.sort.join
+    binding.pry
   end
-  
+
 end
