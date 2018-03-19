@@ -4,5 +4,5 @@ class Anagram
     @word = word
   end
   # alpha_word = word.downcase.chars.sort.join
-  # binding.pry
+  binding.pry
 end
